@@ -32,7 +32,7 @@ const arrayCard = [
     {
         "nome": "Barbara Ramos",
         "ruolo": "Graphics Designer",
-        "foto": "img/barbara-ramos-graphics-designer.jpg"
+        "foto": "img/barbara-ramos-graphic-designer.jpg"
     },
     {
         "nome": "Scott Estrada",
@@ -83,24 +83,39 @@ for (let i = 0; i < arrayCard.length; i++){
     
     // sfogliare ogni oggetto dell'array
     // e per ogni oggetto eseguire le seguenti istruzioni:
-    for (let chiave in oggettoIesimo){
-        // 1. assegnare l'immagine al tag img + alt
-        imgEl.src = oggettoIesimo["foto"];
 
-        console.log(oggettoIesimo["foto"]);
-
-        // 2. assegnare il nome al tag per il titolo
-
-
-        // 3. assegnare il ruolo al tag per il ruolo
-        
-
-    }
+    // 1. assegnare l'immagine al tag img + alt
+    imgEl.src = oggettoIesimo.foto;
+    imgEl.alt = oggettoIesimo.nome
 
     
-    // dopo appendere il tutto nel div con classe team-container selezionato come contenitore
+    // 2. assegnare il nome al tag per il titolo
+    titleEl.append(oggettoIesimo.nome);
     
     
+    // 3. assegnare il ruolo al tag per il ruolo
+    roleEl.append(oggettoIesimo.ruolo);
+
+    console.log(oggettoIesimo.foto);
+    console.log(oggettoIesimo.nome);
+    console.log(oggettoIesimo.ruolo);
+
+    // appendere il contenuto ad ogni sotto container di team-card
+
+    // sezione card-Image
+    divElCardImage.append(imgEl);
+    divElTeamCard.append(divElCardImage);
+
+    // sezione card-text
+    divElCardText.append(titleEl);
+    divElCardText.append(roleEl);
+    divElTeamCard.append(divElCardText);
+
+
+
+    // appendere team-card a container principale
+    contenitore.append(divElTeamCard);    
+
 }
 
 
