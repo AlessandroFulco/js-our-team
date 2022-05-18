@@ -114,55 +114,5 @@ for (let i = 0; i < arrayCard.length; i++){
 
 
     // appendere team-card a container principale
-    contenitore.append(divElTeamCard);    
-
+    contenitore.append(divElTeamCard);
 }
-
-
-
-
-
-// creare tutti gli elementi per poi appendere alla fine la card
-
-// // creare elemento div con classe team-card
-// const divElTeamCard = document.createElement("div");
-// divElTeamCard.className = "team-card";
-// console.log(divElTeamCard);
-
-// // creare elemento con classe card-image
-// const divElCardImage = document.createElement("div");
-// divElCardImage.className = "card-image";
-// console.log(divElCardImage);
-
-
-// // creare elemento div con classe card-text
-// const divElText = document.createElement("div");
-// divElText.className = "card-text";
-
-
-
-
-// // creare elemento img 
-// const cardImg = document.createElement("img");
-// cardImg.src = arrayCard[0].foto
-// cardImg.alt = arrayCard[0].nome
-// console.log(cardImg);
-
-// // creare elemento che contiene il nome ed un elemento che contiene il Ruolo
-// const elNome = document.createElement('h3');
-// elNome.append(arrayCard[0].nome);
-// console.log(elNome);
-// const elRole = document.createElement('p');
-// elRole.append(arrayCard[0].ruolo);
-// console.log(elRole);
-
-
-// contenitore.append(divElTeamCard);
-// divElTeamCard.append(divElCardImage);
-// divElCardImage.append(cardImg);
-// divElText.append(elNome);
-// divElText.append(elRole);
-// divElTeamCard.append(divElText);
-
-
-// console.log(divElTeamCard);
